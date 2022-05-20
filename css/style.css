@@ -1,0 +1,128 @@
+/* Bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+
+/* Components */
+@import url("components/search.css")
+
+/* Global styling */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 0.75fr 2.25fr 1fr;
+	grid-template-rows: 100vh;
+	grid-template-areas: 
+		"sidebar feed trending" 	
+}
+
+#sidebar {
+	grid-area: sidebar;
+	height: 100vh;
+}
+
+#sidebar h1 {
+	font-size: 1.5rem;
+}
+
+#sidebar a {
+	text-decoration: none;
+	color: darkgray;
+	font-size: 1.2rem;
+	margin: 7px 0;
+}
+
+#sidebar a:hover {
+	font-weight: bold;
+	color: black;
+}
+
+#button-truit {
+	font-size: 1.3rem; 
+}
+
+#feed {
+	grid-area: feed;
+	overflow: hidden;
+}
+
+#trending {
+	grid-area: trending;
+	height: 100vh;
+}
+
+
+#navbar {
+	display: none;
+	background-color: var(--bs-blue);
+}
+
+#navbar i {
+	font-size: 2.2rem;
+	
+	color: white;
+}
+
+.avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.overflow-y-scroll {
+	overflow-y: scroll;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+
+#title h3 {
+	margin: 0 !important;
+}
+
+#truit-icon {
+	display: none !important;
+}
+
+@media (max-width: 887px) {
+	.grid {
+		height: 100vh;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 9fr 1fr;
+		grid-template-areas: 
+			"feed" 
+			"navbar"
+	}
+
+	#sidebar {
+		display: none !important;
+	}
+
+	#trending {
+		display: none !important;
+	}
+
+	#navbar {
+		display: block;
+	}
+
+	#title {
+		background-color: var(--bs-gray-200);
+	}
+
+	#truit-icon {
+		display: flex !important;
+	}
+
+
+}
+
+
+
+
