@@ -57,7 +57,10 @@ body {
 	display: none;
 	/* background-color: var(--bs-blue); */
   background-color: red;
+  position: fixed;
+  bottom: 0;
   bottom: env(safe-area-inset-bottom);
+  width: 100%;
 }
 
 #navbar i {
@@ -94,10 +97,9 @@ body {
     height: 100vh;
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 9fr 1fr;
+		grid-template-rows: 1fr;
 		grid-template-areas:
 			"feed"
-			"navbar"
 	}
 
 	#sidebar {
@@ -110,7 +112,6 @@ body {
 
 	#navbar {
 		display: block;
-    grid-area: navbar;
 	}
 
 	#title {
