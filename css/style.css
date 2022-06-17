@@ -55,7 +55,8 @@ body {
 
 #navbar {
 	display: none;
-	background-color: var(--bs-blue);
+	/* background-color: var(--bs-blue); */
+  background-color: green;
   position: fixed;
   bottom: 0;
   bottom: env(safe-area-inset-bottom);
@@ -102,9 +103,6 @@ body {
 	}
 
 
-  #feed {
-    overflow-y: scroll;
-  }
 
 	#sidebar {
 		display: none !important;
