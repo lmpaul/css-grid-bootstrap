@@ -55,8 +55,7 @@ body {
 
 #navbar {
 	display: none;
-	/* background-color: var(--bs-blue); */
-  background-color: green;
+	background-color: var(--bs-blue);
   position: fixed;
   bottom: 0;
   bottom: env(safe-area-inset-bottom);
@@ -94,13 +93,18 @@ body {
 
 @media (max-width: 887px) {
 	.grid {
-    height: 100vh;
+    height: 100%;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
 		grid-template-areas:
 			"feed"
 	}
+
+
+  #feed {
+    overflow-y: scroll;
+  }
 
 	#sidebar {
 		display: none !important;
