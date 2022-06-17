@@ -50,18 +50,17 @@ body {
 
 #trending {
 	grid-area: trending;
-	height: 100vh;
 }
 
 
 #navbar {
 	display: none;
 	background-color: var(--bs-blue);
+  bottom: env(safe-area-inset-bottom);
 }
 
 #navbar i {
 	font-size: 2.2rem;
-
 	color: white;
 }
 
@@ -91,7 +90,7 @@ body {
 
 @media (max-width: 887px) {
 	.grid {
-		height: 100vh;
+    height: 100vh;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 9fr 1fr;
@@ -110,6 +109,7 @@ body {
 
 	#navbar {
 		display: block;
+    grid-area: navbar;
 	}
 
 	#title {
