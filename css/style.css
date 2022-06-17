@@ -55,8 +55,7 @@ body {
 
 #navbar {
 	display: none;
-	/* background-color: var(--bs-blue); */
-  background-color: green;
+	background-color: var(--bs-blue);
   position: fixed;
   bottom: 0;
   bottom: env(safe-area-inset-bottom);
